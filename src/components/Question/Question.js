@@ -1,16 +1,17 @@
 import React from 'react';
+import './Question.css';
 import { Card, Col, Row, } from 'react-bootstrap';
 import { EyeIcon } from '@heroicons/react/24/solid'
+import Option from '../Option/Option';
 
 const Question = ({ques, idx, toggleShow}) => {
     const {question, options, correctAnswer} = ques;
     idx++;
-    console.log(ques);
+    // console.log(ques);
 
     return (
         <Col>
-          <Card className='border-0 shadow rounded'>
-              
+          <Card className='border-0 shadow rounded-xl quiz-card'>
             <Card.Body>
                 <div className='question-container d-flex'>
                     <Card.Title className='q text-center w-50 mx-auto'>
@@ -20,18 +21,13 @@ const Question = ({ques, idx, toggleShow}) => {
                         <EyeIcon onClick={() => toggleShow(correctAnswer)} className="eye-icon text-danger"/>
                     </div>
                 </div>
-                <Row xs={1} md={2}>
-                    <Col>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                            {/* <label class="form-check-label" for="flexRadioDefault1">
-                                Default radio
-                            </label> */}
-                        </div>
-                    </Col>
-                    <Col>b</Col>
-                    <Col>c</Col>
-                    <Col>d</Col>
+                <Row xs={1} md={2} className="options">
+                    {
+                        options.map(option => <Option 
+                            key={option} 
+                            option={option}
+                            />)
+                    }
                 </Row>
             </Card.Body>
           </Card>

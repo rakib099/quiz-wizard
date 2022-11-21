@@ -1,0 +1,8 @@
+.option {
+    /* border: 1px solid #f46969; */
+    border-radius: 8px;
+    height: 70px;
+}
+.option-label {
+    color: #ff0000;
+}

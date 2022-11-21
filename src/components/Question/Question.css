@@ -1,7 +1,7 @@
-.nav-bar {
+.quiz-card {
     background-color: #fff5f5;
 }
-.ms-auto > .active {
+/* .options {
     border: 1px solid #f46969;
-    border-radius: 8px;
-}
+    border-radius: 10px;
+} */

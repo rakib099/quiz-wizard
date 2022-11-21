@@ -5,11 +5,13 @@
     color: #f46969;
 }
 .show-ans-toast {
-    position: absolute;
+    position: fixed;
+    top: 10%;
+    right: 35%;
     z-index: 1;
 }
 .q {
-    color: brown;
+    color: brown;  /* #ff1414 */
 }
 .eye-icon {
     width: 24px;

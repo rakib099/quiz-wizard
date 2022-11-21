@@ -10,7 +10,7 @@ const Header = () => {
     }
 
     return (
-        <Navbar className='p-3' bg="light" variant="light">
+        <Navbar className='p-3 nav-bar' variant="light">
         <Container>
           <Navbar.Brand className='fw-bold' style={style} href="#">
           <img

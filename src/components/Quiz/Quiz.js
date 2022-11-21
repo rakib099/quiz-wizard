@@ -23,13 +23,16 @@ const Quiz = () => {
         <Container className='main-container my-4'>
             <Toast className='show-ans-toast text-center' show={show} onClose={()=> setShow(!show)}>
             <Toast.Header>
-                <strong className="me-auto">Correct Answer</strong>
+                <strong className="me-auto">
+                    <span className='text-success'>Correct Answer</span> is :
+                </strong>
             </Toast.Header>
-            <Toast.Body>{correctAns}</Toast.Body>
+            <Toast.Body className="text-danger bg-white fw-semibold">{correctAns}</Toast.Body>
             </Toast>
+
             <h3 className='title text-center fw-bold'>Quiz of {name}</h3>
-            <Container className="quiz-container mt-3">
-                <Row xs={1} className="g-4">
+            <div className="quiz-container mt-3">
+                <Row xs={1} className="g-5">
                     {
                         questions.map((question, idx) => <Question 
                             key={question.id} 
@@ -39,7 +42,7 @@ const Quiz = () => {
                             />)
                     }
                 </Row>
-            </Container>
+            </div>
         </Container>
     );
 };
