@@ -2,7 +2,7 @@ import React from 'react';
 import './Option.css';
 import { Col, Row } from 'react-bootstrap';
 
-const Option = ({option}) => {
+const Option = ({option, handleOptionClick}) => {
     return (
         <Col>
             <Row className="option d-flex align-items-center px-3">
@@ -10,7 +10,7 @@ const Option = ({option}) => {
                     <input className="form-check-input" type="radio" name="flexRadioDefault" id={option}/>
                 </Col>
                 <Col className='p-0' xs={11}>
-                    <label className="form-check-label option-label" htmlFor={option}>
+                    <label onClick={() => handleOptionClick(option)} className="form-check-label option-label" htmlFor={option}>
                         {option}
                     </label>
                 </Col>

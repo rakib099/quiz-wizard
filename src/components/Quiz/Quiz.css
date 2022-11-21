@@ -10,13 +10,3 @@
     right: 35%;
     z-index: 1;
 }
-.q {
-    color: brown;  /* #ff1414 */
-}
-.eye-icon {
-    width: 24px;
-    height: 24px;
-}
-.icon-container {
-    cursor: pointer;
-}

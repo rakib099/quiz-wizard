@@ -1,6 +1,17 @@
 .quiz-card {
     background-color: #fff5f5;
 }
+.q {
+    color:  indianred; /* #f46969 */
+}
+.icon-container {
+    cursor: pointer;
+}
+.eye-icon {
+    width: 24px;
+    height: 24px;
+    color:#f46969;
+}
 /* .options {
     border: 1px solid #f46969;
     border-radius: 10px;
