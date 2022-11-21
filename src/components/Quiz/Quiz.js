@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Quiz.css';
 import { useLoaderData } from 'react-router-dom';
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container, Toast, ToastContainer } from 'react-bootstrap';
 import Question from '../Question/Question';
 
 const Quiz = () => {
     const quizData = useLoaderData();
+    const [show, setShow] = useState(false);
+    const [correctAns, setCorrectAns] = useState("")
+
     const quiz = quizData.data;
     const {name, questions, total} = quiz;
     console.log(quiz);
 
+    // show correct answer
+    const toggleShow = (correctAns) => {
+        setShow(!show);
+        setCorrectAns(correctAns);
+    }
+
     return (
         <Container className='main-container my-4'>
+            <Toast className='show-ans-toast text-center' show={show} onClose={()=> setShow(!show)}>
+            <Toast.Header>
+                <strong className="me-auto">Correct Answer</strong>
+            </Toast.Header>
+            <Toast.Body>{correctAns}</Toast.Body>
+            </Toast>
             <h3 className='title text-center fw-bold'>Quiz of {name}</h3>
             <Container className="quiz-container mt-3">
                 <Row xs={1} className="g-4">
@@ -19,6 +34,7 @@ const Quiz = () => {
                         questions.map((question, idx) => <Question 
                             key={question.id} 
                             ques={question}
+                            toggleShow={toggleShow}
                             idx={idx}
                             />)
                     }

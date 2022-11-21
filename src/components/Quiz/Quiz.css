@@ -1,5 +1,12 @@
+.main-container {
+    position: relative;
+}
 .main-container .title {
     color: #f46969;
+}
+.show-ans-toast {
+    position: absolute;
+    z-index: 1;
 }
 .q {
     color: brown;
