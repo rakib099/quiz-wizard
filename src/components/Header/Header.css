@@ -1,5 +1,4 @@
 .ms-auto > .active {
-    /* text-decoration: #f46969 underline; */
     border: 1px solid #f46969;
     border-radius: 8px;
 }

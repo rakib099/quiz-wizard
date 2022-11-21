@@ -5,7 +5,6 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    let activeClassName = "underline";
     const style = {
         color: "#f46969"
     }
