@@ -1,11 +1,12 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, } from 'react-bootstrap';
 import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Question = ({ques, idx}) => {
     const {question, options, correctAnswer} = ques;
     idx++;
     console.log(ques);
+
     return (
         <Col>
           <Card className='border-0 shadow rounded'>

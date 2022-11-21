@@ -8,3 +8,6 @@
     width: 24px;
     height: 24px;
 }
+.icon-container {
+    cursor: pointer;
+}
