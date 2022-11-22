@@ -1,5 +1,5 @@
 .quiz-card {
-    background-color: #fff5f5;
+    background-color: #fff5f5 !important;
 }
 .q {
     color:  indianred; /* #f46969 */

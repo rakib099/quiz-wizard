@@ -11,7 +11,7 @@ const Quiz = () => {
 
     const quiz = quizData.data;
     const {name, questions, total} = quiz;
-    console.log(quiz);
+    // console.log(quiz);
 
     // show correct answer
     const toggleShow = (correctAns) => {

@@ -1,0 +1,16 @@
+footer {
+    background-color: #fff5f5;
+    padding: 1.5rem;
+}
+footer p {
+    color: #f46969;
+}
+footer a {
+    color:#00ace4;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: italic;
+}
+footer span {
+    color:#f46969;
+}
