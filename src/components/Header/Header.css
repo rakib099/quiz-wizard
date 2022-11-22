@@ -1,6 +1,9 @@
 .nav-bar {
     background-color: #fff5f5;
 }
+.brand {
+    text-decoration: none;
+}
 .ms-auto > .active {
     border: 1px solid #f46969;
     border-radius: 8px;
