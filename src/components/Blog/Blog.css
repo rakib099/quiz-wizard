@@ -1,0 +1,23 @@
+.blog .title {
+    text-align: center;
+    color: #f46969;
+}
+.blog .ques {
+    border-radius: 8px;
+    background-color: #fff5f5;
+}
+.ques h3 {
+    color: indianred;
+}
+.ques p {
+    color: #ff0000
+}
+.ques p > span {
+    color: indianred;
+}
+.list-title {
+    color: indianred;
+}
+ul > li {
+    color: #ff0000;
+}
