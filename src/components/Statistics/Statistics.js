@@ -18,7 +18,6 @@ import {
 const Statistics = () => {
     const topicData = useLoaderData();
     const topic = topicData.data;
-    console.log(topic);
 
     return (
         <Container className='my-4'>
